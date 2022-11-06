@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+	height: 109px;
+	background: #0a3d62;
+}
+.flex-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+}
+.logo {
+	width: 12%;
+}
+.logo img {
+	width: 100%;
+	height: 80px;
+    padding: 15px 0px;
+}
+.navbar ul li {
+	display: inline-block;
+	padding: 15px 15px;
+	list-style-type: none;
+	position: relative;
+}
+.navbar ul li a {
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+.navbar ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: black;
+	position: absolute;
+	left: 9px;
+	bottom: 11px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 80%;
+}
+@media only screen and (max-width: 480px){
+      .logo{
+      	width: 30%;
+      } 
+      .logo img {
+      	height: 65px;
+      }
+      .navbar ul li{
+          padding: 8px 8px;
+      }
+      .navbar ul li a{
+      	font-size: 12px;
+      }
+}
+.portfolio {
+	background: darkcyan;
+	width: 100%;
+	height: 650px;
+}
+.container-flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 6%;
+}
+.name {
+	padding: 20px 0px;
+} 
+.name h1 {
+	color: #6a1616;
+	font-size: 50px;
+	text-transform: capitalize;
+}
+.details p {
+	line-height: 1.5em;
+	font-style: italic;
+	font-size: 30px;
+	font-weight: bold;
+	color: /*#bdacac*/ #3c2c40;
+}
+.download-cv {
+	padding-top: 30px;
+}
+.download-cv button{
+	font-size: 15px;
+	padding: 15px 20px;
+	border-radius: 5px;
+	background: black;
+	color: white;
+       transition: 0.6s;
+       width: 40%;
+}
+.download-cv button:hover{
+	background: darkmagenta;
+  }
+  .images {
+  	position: relative;
+  }
+  .back-shape {
+  	width: 120%;
+  	
+  }
+  .back-shape img {
+  	width: 100%;
+  	height: 380px;
+  }
+  .my-photo {
+  	width: 45%;
+  	position: absolute;
+  	top: 15%;
+  	left: 46%;
+  }
+  .my-photo img {
+  	width: 100%;
+  	height: 235px;
+  	border-radius: 50%;
+  }
+  @media only screen and (max-width: 480px){
+  	.portfolio{
+  		height: auto;
+  	}
+  	.container-flex{
+  		display: block;
+  	}
+  	.my-self{
+  		text-align: center;
+  	}
+  	.download-cv{
+  		padding-bottom: 30px;
+  	}
+  	.back-shape {
+  		width: 80%;
+  		margin: auto;
+  	}
+  	.back-shape  img {
+  		height: auto;
+  	}
+  	  .my-photo {
+             width: 30%;
+             left: 40%;
+  	  }
+  	    .my-photo img {
+  	    	height: auto;
+  	    }
+  	    .images{
+  	    	padding-bottom: 20px;
+  	    }
+  	    .download-cv button{
+  	    	font-size: 11px;
+  	    }
+
+
+  }
